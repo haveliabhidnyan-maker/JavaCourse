@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Fibbonaci {
+    public static void main(String[] args){
+        Scanner n1 = new Scanner(System.in);
+
+        System.out.print("Enter First number: ");
+        int x1 = n1.nextInt();
+
+        System.out.print("Enter Second number: ");
+        int x2 = n1.nextInt();
+
+        System.out.print("Enter total number: ");
+        int N = n1.nextInt();
+
+        int[] myNumbers = new int[N];
+
+        
+        myNumbers[0] = x1;
+        if (N > 1) {
+            myNumbers[1] = x2;
+        }
+
+        
+        for(int i = 2; i < N; i++){
+            myNumbers[i] = myNumbers[i-1] + myNumbers[i-2];
+        }
+
+       
+        for(int i = 0; i < N; i++){
+            System.out.println(myNumbers[i]);
+        }
+
+        n1.close();
+    }
+}
