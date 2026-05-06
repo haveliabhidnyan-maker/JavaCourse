@@ -1,0 +1,14 @@
+public class Assignmentoperator {
+    public static void main(String[] args){
+        int x1 = 5;
+        int x2 = 10;
+
+        int temp = x1;
+        x1 = x2;
+        x2 = temp;
+
+        System.out.println(x1);
+        System.out.println(x2);
+
+    }
+}
