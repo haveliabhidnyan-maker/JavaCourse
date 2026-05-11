@@ -25,17 +25,17 @@ class Construct{
             
             System.out.println("First Object");
             Construct obj = new Construct("Sweta", 68);
-            System.out.println("GeekName: " + obj.name
-                    + " and GeekId: " + obj.id);
+            System.out.println("ObjName: " + obj.name
+                    + " and ObjId: " + obj.id);
 
             System.out.println();
 
             
-            Construct geek2 = new Construct(obj);
+            Construct obj2 = new Construct(obj);
             System.out.println(
                     "Copy Constructor used Second Object");
-            System.out.println("Objname: " + geek2.name
-                    + " and ObjID: " + geek2.id);
+            System.out.println("Objname: " + obj2.name
+                    + " and ObjID: " + obj2.id);
         }
     }
 }
