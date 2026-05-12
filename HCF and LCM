@@ -23,7 +23,7 @@ public class HCFandLCM {
 
         int hcf = x;
 
-        // Formula for LCM
+        
         int lcm = (a * b) / hcf;
 
         System.out.println(hcf);
